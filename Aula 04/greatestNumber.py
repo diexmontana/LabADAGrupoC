@@ -1,6 +1,7 @@
 # 1. greatestNumber.py
+# Convertir la complejidad de O(n^2) a O(n)
 def greatestNumber(array):
-    #Convertir la complejidad de O(n^2) a O(n)
+    # Encuentra el mayor número en el arreglo
     for i in array:
         isValTheGreatest = True
         for j in array:
