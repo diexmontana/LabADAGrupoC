@@ -12,13 +12,13 @@ def areaMaxima( matriz):
 
 def dfs(matriz, x, y):
     # depth first search
-        matriz[x][y] = 0
-        area = 1
-        vecinos = [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]
-        for i, j in vecinos:
-            if i >= 0 and j >= 0 and i < len(matriz) and j < len(matriz[0]) and matriz[i][j] == 1:
-                area += dfs(matriz, i, j)
-        return area
+    matriz[x][y] = 0
+    area = 1
+    vecinos = [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]
+    for i, j in vecinos:
+        if i >= 0 and j >= 0 and i < len(matriz) and j < len(matriz[0]) and matriz[i][j] == 1:
+            area += dfs(matriz, i, j)
+    return area
     
     
 
